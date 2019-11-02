@@ -1,0 +1,30 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.inducesmile.androidpayexample.MapsActivity"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"  >
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvOrigin"
+    android:text="Bart's Bakery, Deccan Gymkhana, Pune"
+    android:textSize="20dp"
+    />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Please click on Bart's Bakery Marker"
+    android:id="@+id/tvDestination" />
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</LinearLayout>
